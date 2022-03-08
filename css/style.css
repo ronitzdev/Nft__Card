@@ -51,12 +51,39 @@ body {
     border-radius: 7px;
     margin-bottom: 24px;
     position: relative;
+
+    cursor: pointer;
 }
 
 .nft__img {
     width: 100%;
     height: 100%;
 
+}
+
+.picture__nft::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    transition: 0.5s;
+    background-color: hsl(178deg 100% 50% / 50%);
+}
+
+.picture__nft:after {
+    opacity: 0;
+    content: url(../images/icon-view.svg);
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    transition: 0.5s;
+}
+
+.picture__nft:hover.picture__nft::before,
+.picture__nft:hover.picture__nft::after {
+    opacity: 1;
 }
 
 .part__one {
@@ -141,4 +168,3 @@ body {
     color: var(--cyan);
     cursor: pointer;
 }
-
