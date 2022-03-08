@@ -1,0 +1,144 @@
+:root {
+    /* Primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Neutral */
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-blue-cl: hsl(216, 50%, 16%);
+    --very-dark-line: hsl(215, 32%, 27%);
+    /*lineas */
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+.container {
+    width: 330px;
+    height: 540px;
+    background-color: var(--very-dark-blue-cl);
+    padding: 24px;
+    border-radius: 15px;
+}
+
+.picture__nft {
+    width: 100%;
+    height: 276px;
+    background-image: url('/images/image-equilibrium.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.nft__img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.part__one {
+    width: 100%;
+}
+
+.title {
+    font-size: 1.37rem;
+    padding-bottom: 17px;
+    font-weight: 600;
+}
+
+.paragraph {
+    font-size: 1.21em;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--soft-blue);
+
+}
+
+.part__two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    border-bottom: 0.1px solid var(--very-dark-line)
+}
+
+.number {
+    display: flex;
+}
+
+.eth__icon {
+    margin-right: 5px;
+}
+
+.number__text {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.time {
+    display: flex;
+    cursor: pointer;
+}
+
+.time__icon {
+    margin-right: 5px;
+}
+
+.part__three {
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+}
+
+.autor__img {
+    width: 32px;
+    height: 32px;
+    background-image: url('/images/image-avatar.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.autor__name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.name {
+    margin-left: 3px;
+}
+
+.active:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
