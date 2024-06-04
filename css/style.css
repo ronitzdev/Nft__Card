@@ -1,175 +1,173 @@
 :root {
-    /* Primary */
-    --soft-blue: hsl(215, 51%, 70%);
-    --cyan: hsl(178, 100%, 50%);
-    /* Neutral */
-    --very-dark-blue: hsl(217, 54%, 11%);
-    --very-dark-blue-cl: hsl(216, 50%, 16%);
-    --very-dark-line: hsl(215, 32%, 27%);
-    /*lineas */
-    --white: hsl(0, 0%, 100%);
+  /* Primary */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --very-dark-blue-cl: hsl(216, 50%, 16%);
+  --very-dark-line: hsl(215, 32%, 27%);
+  /*lineas */
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    min-height: 100%;
-    font-family: 'Outfit', sans-serif;
-    color: var(--white);
-    font-size: 12px;
-    overflow-x: hidden;
+  min-height: 100%;
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+  font-size: 12px;
+  overflow-x: hidden;
 }
 
 .main {
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--very-dark-blue);
-    padding: 50px 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  padding: 50px 0;
 }
 
 .container {
-    width: 330px;
-    height: 540px;
-    background-color: var(--very-dark-blue-cl);
-    padding: 24px;
-    border-radius: 15px;
+  width: 330px;
+  height: 540px;
+  background-color: var(--very-dark-blue-cl);
+  padding: 24px;
+  border-radius: 15px;
 }
 
 .picture__nft {
-    width: 100%;
-    height: 276px;
-    background-image: url('/images/image-equilibrium.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 7px;
-    margin-bottom: 24px;
-    position: relative;
+  width: 100%;
+  height: 276px;
+  background-image: url("/images/image-equilibrium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 7px;
+  margin-bottom: 24px;
+  position: relative;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nft__img {
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
 .picture__nft::before {
-    opacity: 0;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
-    transition: 0.5s;
-    background-color: hsl(178deg 100% 50% / 50%);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  transition: 0.5s;
+  background-color: hsl(178deg 100% 50% / 50%);
 }
 
 .picture__nft:after {
-    opacity: 0;
-    content: url(../images/icon-view.svg);
-    position: absolute;
-    top: 42%;
-    left: 42%;
-    transition: 0.5s;
+  opacity: 0;
+  content: url(../images/icon-view.svg);
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  transition: 0.5s;
 }
 
 .picture__nft:hover.picture__nft::before,
 .picture__nft:hover.picture__nft::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .part__one {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    font-size: 1.37rem;
-    padding-bottom: 17px;
-    font-weight: 600;
+  font-size: 1.37rem;
+  padding-bottom: 17px;
+  font-weight: 600;
 }
 
 .paragraph {
-    font-size: 1.21em;
-    font-weight: 400;
-    line-height: 21px;
-    color: var(--soft-blue);
-
+  font-size: 1.21em;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--soft-blue);
 }
 
 .part__two {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 55px;
-    border-bottom: 0.1px solid var(--very-dark-line)
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  border-bottom: 0.1px solid var(--very-dark-line);
 }
 
 .number {
-    display: flex;
+  display: flex;
 }
 
 .eth__icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .number__text {
-    color: var(--cyan);
-    cursor: pointer;
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 .time {
-    display: flex;
-    cursor: pointer;
+  display: flex;
+  cursor: pointer;
 }
 
 .time__icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .part__three {
-    display: flex;
-    flex-direction: row;
-    padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
 }
 
 .autor__img {
-    width: 32px;
-    height: 32px;
-    background-image: url('/images/image-avatar.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid white;
-    margin-right: 15px;
-    border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/image-avatar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid white;
+  margin-right: 15px;
+  border-radius: 50%;
 }
 
 .autor__name {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-weight: 300;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
 }
 
 .name {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 .active:hover {
-    color: var(--cyan);
-    cursor: pointer;
+  color: var(--cyan);
+  cursor: pointer;
 }
